@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "rootDir": "./scripts",
+        "outDir": "./build",
+        "module": "amd",
+        "sourceMap": false,
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "target": "es5",
+        "lib": [
+            "dom",
+            "es5",
+            "scripthost",
+            "es2015.iterable",
+            "es2015.promise"
+        ],
+        "moduleResolution": "node"
+    },
+    
+    "files": [
+        "scripts/app.ts"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "manifestVersion": 1,
+    "id": "task-linker",
+    "version": "1.0.77",
+    "name": "task-linker",
+    "description": "Enables the creation of child work items based on templates and tag names.",
+    "publisher": "maestro-kavengagne",
+    "icons": {
+        "default": "img/logo.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "scopes": [ "vso.work", "vso.work_write" ],
+    "files": [
+        {
+            "path": "img",
+            "addressable": true
+        },
+        {
+            "path": "build",
+            "addressable": true
+        },
+        {
+            "path": "index.html",
+            "addressable": true
+        }
+    ],
+
+    "contributions": [
+        {
+            "id": "task-linker-action",
+            "type": "ms.vss-web.action-provider",
+            "targets": [
+                "ms.vss-work-web.work-item-context-menu"
+            ],
+            "properties": {
+                "group": "contributed",
+                "uri": "index.html"
+            }
+        }
+    ]
+}
