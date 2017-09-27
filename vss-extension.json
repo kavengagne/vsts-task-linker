@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "task-linker",
-    "version": "1.0.77",
+    "version": "1.0.85",
     "name": "task-linker",
     "description": "Enables the creation of child work items based on templates and tag names.",
     "publisher": "maestro-kavengagne",

@@ -7,15 +7,27 @@
 </head>
 <body>
     <script type="text/javascript">
-        VSS.init({
-            explicitNotifyLoaded: true,
-            usePlatformScripts: true,
-            configureModuleLoader: true
-        });
+        (function() {
+            // require.config({
+            //     paths: {
+            //         "all": "build/app"
+            //     },
+            //     deps: [ "all" ],
+            //     callback: start
+            // });
+            start();
+            function start() {
+                VSS.init({
+                    explicitNotifyLoaded: true,
+                    usePlatformScripts: true,
+                    configureModuleLoader: true
+                });
         
-        VSS.require(["build/app"], function () {
-            VSS.notifyLoadSucceeded();
-        });
+                VSS.require(["build/app"], function () {
+                    VSS.notifyLoadSucceeded();
+                });
+            }
+        })();
     </script>
 </body>
 </html>
