@@ -7,7 +7,7 @@ import Config from "./config";
 
 
 export default class Menu {
-    public static async getMenuItems(context): Promise<IContributedMenuItem[]> {
+    public static async getMenuItems(context: any): Promise<IContributedMenuItem[]> {
         Logger.log(context);
 
         if (Menu.shouldHide(context)) {
@@ -19,6 +19,7 @@ export default class Menu {
 
         return [<IContributedMenuItem>{
             title: Config.appName,
+            //icon: Config.menuIcon,
             childItems: childItems
         }];
     }

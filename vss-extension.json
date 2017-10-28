@@ -1,34 +1,25 @@
 {
     "manifestVersion": 1,
     "id": "task-linker",
-    "version": "1.0.85",
     "name": "task-linker",
+    "version": "1.0.97",
     "description": "Enables the creation of child work items based on templates and tag names.",
     "publisher": "maestro-kavengagne",
-    "icons": {
-        "default": "img/logo.png"
+    "tags": ["Task", "Productivity", "Planning", "Template", "Link"],
+    "categories": ["Plan and track"],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/kavengagne/vsts-task-linker"
     },
     "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
+        { "id": "Microsoft.VisualStudio.Services.Cloud" }
     ],
-    "scopes": [ "vso.work", "vso.work_write" ],
+    "scopes": ["vso.work", "vso.work_write"],
     "files": [
-        {
-            "path": "img",
-            "addressable": true
-        },
-        {
-            "path": "build",
-            "addressable": true
-        },
-        {
-            "path": "index.html",
-            "addressable": true
-        }
+        { "path": "img", "addressable": true },
+        { "path": "build", "addressable": true },
+        { "path": "index.html", "addressable": true }
     ],
-
     "contributions": [
         {
             "id": "task-linker-action",
@@ -41,5 +32,21 @@
                 "uri": "index.html"
             }
         }
+    ],
+    "icons": {
+        "default": "img/logo.png"
+    },
+    "content": {
+        "details": {
+            "path": "README.md"
+        },
+        "license": {
+            "path": "LICENSE.md"
+        }
+    },
+    "screenshots": [
+        { "path": "img/screen-01.png" },
+        { "path": "img/screen-02.png" },
+        { "path": "img/screen-03.png" }
     ]
 }
