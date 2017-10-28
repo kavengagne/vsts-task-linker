@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "task-linker",
     "name": "task-linker",
-    "version": "1.0.97",
+    "version": "1.0.107",
     "description": "Enables the creation of child work items based on templates and tag names.",
     "publisher": "maestro-kavengagne",
     "tags": ["Task", "Productivity", "Planning", "Template", "Link"],
